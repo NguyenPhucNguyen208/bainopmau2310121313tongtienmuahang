@@ -31,5 +31,8 @@ tongtienmuahang(None)                   | None
 
 #region bailam
 def tongtienmuahang(gia_truoc_thue):
-  return 'todo'
+  if gia_truoc_thue is None : 
+    return None 
+  tax = int(gia_truoc_thue)*(10/100)
+  return int(gia_truoc_thue)+int(tax)  
 #endregion bailam
